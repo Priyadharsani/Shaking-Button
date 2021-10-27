@@ -1,0 +1,42 @@
+/* Text color - #1670f0 */
+/* Background Color - #121212 */
+
+body{
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 52px;
+    color: #1670f0;
+    background-color: black;
+    border: 5px solid #1670f0;
+}
+
+.btn:hover{
+    animation: shake .3s linear infinite;
+}
+
+@keyframes shake{
+    0%{
+      transform: translateX(0);
+    }
+
+    25%{
+       transform: translateX(-10px);
+    }
+
+    75%{
+      transform: translateX(10px);
+    } 
+
+    100%{
+      transform: translateX(0);
+    }
+}
